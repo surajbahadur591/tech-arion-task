@@ -24,7 +24,7 @@ const Products = () => {
     <div>
         <div className='bg-[#C5B5A6] '>
             {productDetails.map( (prod)=> {
-                return <div className='bg-[#F5F2EF] w-[200px] h-[150px] mx-2 my-2 py-auto px-auto '>
+                return <div className='bg-[#F5F2EF] w-[200px] h-[150px] py-auto px-auto '>
                      <div>{prod.title}</div>
                      <div>{prod.description}</div>
                     </div>
