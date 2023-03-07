@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
     
-    <div className='h-[680px] py-[250px] grid grid-cols-2  text-white bg-gray-900' style={{ 
+    <div className='h-[680px] py-[250px] grid grid-cols-2 w-full text-white bg-gray-900' style={{ 
       backgroundImage: `url(${Pic1})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize:"contain",
