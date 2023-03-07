@@ -1,8 +1,8 @@
 import React from 'react'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-
-const Login = () => {
+import logo from '../assets/food logo.png'
+const Login = ({modelClose}) => {
     const [formValue, setformValue] = React.useState({
         phone: '',
         otp: ''
@@ -22,6 +22,7 @@ const Login = () => {
         const data =await handleSubmit()
         const token = data.data.access
         localStorage.setItem("token", token)
+        modelClose(false)
         history("/")
       }
 
@@ -50,10 +51,14 @@ const Login = () => {
   return (
 
     
-    <div>
-        <div className='mx-auto my-auto bg-white border h-[407px] px-10 w-[443px]'>
-            <img src="" alt="logo" />
-            <h1 className='text-[#1D4109] font-bold'>Welcome to Techarion</h1>
+    <div className=' bg-[#111827] pt-20 z-10' >
+        <div className='mx-auto my-auto bg-white blur-none  border h-[507px] px-10 w-[443px]'>
+  <button className='bg-[#1D4109] text-white w-5 h-5 mt-3' onClick={ () => {
+        modelClose(false)
+      }} > X </button>
+            <img src={logo} alt="logo" height='50px' width='50px' className='mt-10 mx-auto'/>
+            
+            <h1 className='text-[#1D4109] font-bold'>Welcome to Tech Arion</h1>
             <h1 className='py-4'>Please sign-in to your account and start the adventure</h1>
     <label htmlFor="phone">Phone</label>
     <input onChange={handleChange} className='w-full border-gray-500 border py-1 ' type="text" name="phone" id="" placeholder=''></input>
