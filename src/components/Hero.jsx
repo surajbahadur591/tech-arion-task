@@ -13,11 +13,11 @@ const Hero = () => {
       {/* <img src={Pic1} alt="" /> */}
 
     <div> </div>
-    <div >
-    <h1 className=' text-4xl my-4'>DESSERT | BAR | KITCHEN</h1>
-        <h1 className='text-2xl'>The Barn is a global food experience and our dessert bar is legendary!</h1>
+    <div className='px-[100px]' >
+    <h1 className='font-alice text-4xl my-4'>DESSERT | BAR | KITCHEN</h1>
+        <h1 className='font-gabriela text-xl '>The Barn is a global food experience and our dessert bar is legendary!</h1>
 
-        <button className='bg-[#C5B5A6] text-[#000000] px-2 py-1 my-4 rounded-2xl'>Contact Us</button>
+        <button className='bg-[#C5B5A6] font-gabriela shadow-lg text-[#000000] hover:bg-white hover:text-black px-4 py-2 my-6 rounded-2xl'>Contact Us</button>
         
 
     </div>

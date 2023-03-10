@@ -4,7 +4,7 @@ import logo from '../assets/food logo.png'
 const Footer = () => {
   return (
     <div>
-        <div className='bg-black   flex-col text-white  text-center'>
+        <div className='bg-black  font-roboto flex-col text-white  text-center'>
 
           <div className='max-w-[400px] mx-auto'>
           <img src={logo} alt="logo" height='50px' width='50px' className=' mx-auto'/>
